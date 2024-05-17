@@ -22,6 +22,7 @@ def express_num(num_to_express, num_in_expression, number_num_in_expression):
             result_lst.append((new_lst))
             # print(get_total(new_lst))
     print(result_lst)
+    
 if __name__ == '__main__':
     express_num(1, 2,3)
     # num_in_expression = 2

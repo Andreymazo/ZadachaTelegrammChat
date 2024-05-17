@@ -1,4 +1,4 @@
-
+"""Функция считает плюсыб минусы"""
 def evaluate_expression(lst):
     result = lst[0]
     for i in range(1, len(lst)-1, 2):
@@ -7,6 +7,7 @@ def evaluate_expression(lst):
         elif lst[i] == '-':
             result -= lst[i+1]
     return result
+
 """Функция находит убирает деление и два числа вокруг и вставляет на его место его значение"""
 def evaluate_expression_devide(lst):
     for i in range(1, len(lst)-1, 2):
@@ -60,7 +61,7 @@ def get_total(lst1):
     return(total)
 
 
-if __name__ == '__main__':
-    lst1 = [2, '/', 2, '*', 3, '-', 2, '+', 3, '-', 4, '*', 2 , '/', 2]
-    get_total(lst1)
+# if __name__ == '__main__':
+#     lst1 = [2, '/', 2, '*', 3, '-', 2, '+', 3, '-', 4, '*', 2 , '/', 2]
+#     get_total(lst1)
     
